@@ -1,18 +1,17 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Share2, MessageCircle, Heart, Code } from 'lucide-react'
+import { MessageCircle, Share2, Code, Mail, Phone, MapPin } from "lucide-react";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+
+const socialLinks = [
+  { icon: MessageCircle, href: 'https://wa.me/923400266956', label: 'WhatsApp' },
+  { icon: FaFacebook, href: 'https://www.facebook.com/profile.php?id=61591668477600', label: 'Facebook' },
+  { icon: FaInstagram, href: 'https://www.instagram.com/morphacreative/', label: 'Instagram' },
+];
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
-
-  const socialLinks = [
-    { icon: MessageCircle, href: 'https://wa.me/923132236545', label: 'WhatsApp' },
-    { icon: Share2, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: MessageCircle, href: 'https://facebook.com', label: 'Facebook' },
-    { icon: Heart, href: 'https://instagram.com', label: 'Instagram' },
-    { icon: Code, href: 'https://github.com', label: 'GitHub' },
-  ]
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -65,19 +64,19 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-slate-400 hover:text-blue-400 transition-colors">
                 <Mail size={16} />
-                <a href="mailto:raahimabdul20@gmail.com" className="text-sm">
-                  raahimabdul20@gmail.com
+                <a href="mailto:creativemorpha@gmail.com" className="text-sm">
+                  creativemorpha@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2 text-slate-400 hover:text-blue-400 transition-colors">
                 <Phone size={16} />
-                <a href="https://wa.me/923132236545" className="text-sm">
-                  +92 313 2236545
+                <a href="https://wa.me/923400266956" className="text-sm">
+                  +92 3400266956
                 </a>
               </li>
               <li className="flex items-start gap-2 text-slate-400">
                 <MapPin size={16} className="mt-0.5 flex-shrink-0" />
-                <span className="text-sm">North Nazimabad, Karachi, Pakistan</span>
+                <span className="text-sm"> Karachi, Pakistan</span>
               </li>
             </ul>
           </motion.div>
@@ -119,7 +118,6 @@ export default function Footer() {
             <p className="text-slate-500 text-sm">
               © {currentYear} Morpha Creative. All Rights Reserved.
             </p>
-            
           </motion.div>
         </div>
       </div>

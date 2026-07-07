@@ -61,19 +61,19 @@
       {
         icon: Mail,
         label: "Email",
-        value: "raahimabdul20@gmail.com",
-        link: "mailto:raahimabdul20@gmail.com",
+        value: "creativemorpha@gmail.com",
+        link: "mailto:creativemorpha@gmail.com",
       },
       {
         icon: Phone,
         label: "WhatsApp",
-        value: "+92 313 2236545",
-        link: "https://wa.me/923132236545",
+        value: "+92 3400266956",
+        link: "https://wa.me/923400266956",
       },
       {
         icon: MapPin,
         label: "Location",
-        value: "North Nazimabad, Karachi, Pakistan",
+        value: " Karachi, Pakistan",
         link: "https://maps.google.com",
       },
     ];

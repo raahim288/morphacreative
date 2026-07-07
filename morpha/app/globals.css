@@ -177,9 +177,7 @@
   .glass {
     @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-xl;
   }
-  
-  @layer utilities {
-  @layer utilities {
+
   .glass-card {
     position: relative;
     border-radius: calc(var(--radius) * 1.8);
@@ -203,23 +201,22 @@
     }
     backdrop-filter: blur(var(--blur-xl));
     -webkit-backdrop-filter: blur(var(--blur-xl));
-    z-index: 0;
+    z-index: -1;
   }
-}
-}
-  
+
   .gradient-primary {
     @apply bg-gradient-to-r from-blue-500 to-purple-600;
   }
-  
+
   .gradient-secondary {
     @apply bg-gradient-to-r from-purple-600 to-cyan-500;
   }
-  
+
   .text-gradient {
     @apply bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent;
   }
 }
+
 html,
 body {
   overflow-x: hidden;
